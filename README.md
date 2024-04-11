@@ -1,39 +1,65 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Kundalini Yoga Project
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Overview
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Welcome to the Kundalini Yoga project! This project is aimed at providing resources, guidance, and tools for practicing Kundalini Yoga, a spiritual practice that combines physical postures, breathing techniques, meditation, and chanting.
 
-## Codeanywhere Reminders
+About Kundalini Yoga
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+Kundalini Yoga is a form of yoga that focuses on the awakening of the Kundalini energy, which is believed to be located at the base of the spine. Through various practices such as asana (physical postures), pranayama (breathing techniques), meditation, and mantra chanting, practitioners aim to awaken and raise this energy through the chakras, leading to spiritual enlightenment and self-realization.
 
-`python3 -m http.server`
+Project Goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The main goals of this project include:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+Providing resources for beginners to learn about Kundalini Yoga.
+Offering guided practices for individuals at different levels of experience.
+Creating a supportive community for practitioners to share experiences and insights.
+Developing tools and applications to enhance the practice and understanding of Kundalini Yoga.
+Contents
 
-`http_server`
+Documentation: 
+Contains guides, articles, and references on Kundalini Yoga practice.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Practices: 
+Provides guided audio or video sessions for different aspects of Kundalini Yoga practice.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Community: 
+Links to forums, social media groups, or chat platforms where practitioners can interact and share their experiences.
+Tools: Software tools, applications, or scripts that aid in Kundalini Yoga practice or understanding.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+How to Contribute
+Contributions to the Kundalini Yoga project are welcome and appreciated! Here are some ways you can contribute:
 
-To log into the Heroku toolbelt CLI:
+Documentation: 
+Help improve existing documentation or create new guides/articles.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Practices: 
+Share your guided sessions or recommend resources for inclusion.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Community: 
+Contribute by moderating forums/groups or sharing valuable insights.
 
----
+Tools: 
+Develop software tools or applications that can benefit Kundalini Yoga practitioners.
+If you're interested in contributing, please check out our contribution guidelines.
 
-Happy coding!
+Getting Started
+
+To get started with Kundalini Yoga, you can:
+Explore Documentation: 
+Start by reading introductory guides or articles on Kundalini Yoga in the Documentation section.
+
+Practice: 
+Try out guided sessions provided in the Practices section to experience Kundalini Yoga firsthand.
+
+Join the Community: 
+Engage with other practitioners in the Community section to share experiences and gain insights.
+
+Use Tools: 
+Explore tools and applications in the Tools section to enhance your practice.
+
+Support
+If you have any questions, feedback, or issues regarding the Kundalini Yoga project, feel free to reach out to us via email or by opening an issue in this repository.
+
