@@ -8,7 +8,7 @@ Brief introduction to your project.
 
 ## Responsivity Example Image
 
-![Responsivity Example](path/to/om.jpg) <!-- Add an example image showcasing responsivity -->
+![Responsivity Example](assets/images/om.jpg) <!-- Add an example image showcasing responsivity -->
 
 ## Contents
 
