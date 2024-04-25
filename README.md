@@ -1,65 +1,75 @@
-Kundalini Yoga Project
+ # Kundalini Yoga
 
+[Live Site](https://github.com/TooTechnical/kundalini-yoga/blob/main/index.html) <!-- Replace # with your live site link -->
 
-Overview
+## Brief Introduction
 
-Welcome to the Kundalini Yoga project! This project is aimed at providing resources, guidance, and tools for practicing Kundalini Yoga, a spiritual practice that combines physical postures, breathing techniques, meditation, and chanting.
+Brief introduction to your project.
 
-About Kundalini Yoga
+## Responsivity Example Image
 
-Kundalini Yoga is a form of yoga that focuses on the awakening of the Kundalini energy, which is believed to be located at the base of the spine. Through various practices such as asana (physical postures), pranayama (breathing techniques), meditation, and mantra chanting, practitioners aim to awaken and raise this energy through the chakras, leading to spiritual enlightenment and self-realization.
+![Responsivity Example](assets/images/om.jpg) <!-- Add an example image showcasing responsivity -->
 
-Project Goals
+## Contents
 
-The main goals of this project include:
+- [UX (User Experience)](#ux-user-experience)
+- [Design](#design)
+- [Website Features](#website-features)
+- [Tablet/Mobile View](#tabletmobile-view)
+- [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Testing](#testing)
+- [Credits](#credits)
 
-Providing resources for beginners to learn about Kundalini Yoga.
-Offering guided practices for individuals at different levels of experience.
-Creating a supportive community for practitioners to share experiences and insights.
-Developing tools and applications to enhance the practice and understanding of Kundalini Yoga.
-Contents
+## UX (User Experience)
 
-Documentation: 
-Contains guides, articles, and references on Kundalini Yoga practice.
+### User Stories
 
-Practices: 
-Provides guided audio or video sessions for different aspects of Kundalini Yoga practice.
+### Strategy
 
-Community: 
-Links to forums, social media groups, or chat platforms where practitioners can interact and share their experiences.
-Tools: Software tools, applications, or scripts that aid in Kundalini Yoga practice or understanding.
+### Scope
 
-How to Contribute
-Contributions to the Kundalini Yoga project are welcome and appreciated! Here are some ways you can contribute:
+### Structural
 
-Documentation: 
-Help improve existing documentation or create new guides/articles.
+### Skeleton (Wireframes)
 
-Practices: 
-Share your guided sessions or recommend resources for inclusion.
+### Surface
 
-Community: 
-Contribute by moderating forums/groups or sharing valuable insights.
+#### Typography
 
-Tools: 
-Develop software tools or applications that can benefit Kundalini Yoga practitioners.
-If you're interested in contributing, please check out our contribution guidelines.
+#### Colour Scheme
 
-Getting Started
+#### Imagery
 
-To get started with Kundalini Yoga, you can:
-Explore Documentation: 
-Start by reading introductory guides or articles on Kundalini Yoga in the Documentation section.
+## Design
 
-Practice: 
-Try out guided sessions provided in the Practices section to experience Kundalini Yoga firsthand.
+Details about the design aspects of your project.
 
-Join the Community: 
-Engage with other practitioners in the Community section to share experiences and gain insights.
+## Website Features
 
-Use Tools: 
-Explore tools and applications in the Tools section to enhance your practice.
+List of features implemented in your website.
 
-Support
-If you have any questions, feedback, or issues regarding the Kundalini Yoga project, feel free to reach out to us via email or by opening an issue in this repository.
+## Tablet/Mobile View
 
+Description and images/screenshots of how your website looks on tablet/mobile devices.
+
+## Future Features
+
+Planned future features or enhancements for your project.
+
+## Technologies Used
+
+List of languages, frameworks, libraries, and programs used in your project.
+
+## Deployment
+
+Step-by-step process for deploying your project to GitHub Pages.
+
+## Testing
+
+Details about the testing process, including validation of HTML/CSS, Lighthouse Audits, and bugs encountered.
+
+## Credits
+
+Content references, media references, acknowledgements, and any other credits.
