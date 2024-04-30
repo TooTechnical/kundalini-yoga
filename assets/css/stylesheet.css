@@ -83,6 +83,25 @@
           font-size: 2rem;
           font-weight: bold;
       }
+
+      /* Style for the Youtube Videos */
+
+      iframe{
+        border: none;
+        width: 560px;
+        height: 315px;
+        
+      }
+
+      /* Style for the images */
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
     
       /* Style for the contact form container */
 .contact-form {
