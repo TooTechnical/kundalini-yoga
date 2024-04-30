@@ -1,6 +1,6 @@
  # Kundalini Yoga
 
-[Live Site](https://github.com/TooTechnical/kundalini-yoga/blob/main/index.html) <!-- Replace # with your live site link -->
+[Live Site](https://tootechnical.github.io/kundalini-yoga/index.html) <!-- Replace # with your live site link -->
 
 ## Brief Introduction
 
