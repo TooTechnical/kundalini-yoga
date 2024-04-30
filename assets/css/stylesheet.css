@@ -83,3 +83,53 @@
           font-size: 2rem;
           font-weight: bold;
       }
+    
+      /* Style for the contact form container */
+.contact-form {
+  background-color: #f2f2f2; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  margin-top: 50px; /* Add margin from the top */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Style for the heading inside the contact form */
+.contact-form h2 {
+  text-align: center; /* Center align the text */
+  margin-bottom: 30px; /* Add margin below the heading */
+}
+
+/* Style for labels in the contact form */
+.contact-form label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Add margin below each label */
+  font-weight: bold; /* Make labels bold */
+}
+
+/* Style for text inputs, email inputs, and textareas in the contact form */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add rounded corners */
+  margin-bottom: 20px; /* Add margin below each input */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style for the submit button in the contact form */
+.contact-form input[type="submit"] {
+  background-color: #4CAF50; /* Set background color */
+  color: white; /* Set text color */
+  padding: 10px 20px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Add smooth transition */
+}
+
+/* Style for the submit button on hover */
+.contact-form input[type="submit"]:hover {
+  background-color: #3e8e41; /* Change background color on hover */
+}

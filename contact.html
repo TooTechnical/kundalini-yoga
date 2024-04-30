@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="contact-form">
+        <!-- This creates a container for the contact form with a class of "contact-form" for styling purposes. -->
+        <h2>Contact Us</h2>
+        <!-- This creates a heading for the contact form with a level of 2. -->
+        <form action="/submit_form" method="post">
+          <!-- This creates a form with an action attribute that specifies the URL to send the form data to and a method attribute that specifies the HTTP method to use (in this case, POST). -->
+          <label for="name">Name:</label><br>
+          <!-- This creates a label for the name input field with a for attribute that associates it with the corresponding input field. -->
+          <input type="text" id="name" name="name" required><br>
+          <!-- This creates a text input field for the user to enter their name with an id attribute that associates it with the corresponding label, a name attribute that specifies the name of the form field, and a required attribute that specifies that the field is required. -->
+          <label for="email">Email:</label><br>
+          <!-- This creates a label for the email input field with a for attribute that associates it with the corresponding input field. -->
+          <input type="email" id="email" name="email" required><br>
+          <!-- This creates an email input field for the user to enter their email address with an id attribute that associates it with the corresponding label, a name attribute that specifies the name of the form field, and a required attribute that specifies that the field is required. -->
+          <label for="message">Message:</label><br>
+          <!-- This creates a label for the message textarea with a for attribute that associates it with the corresponding textarea. -->
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+          <!-- This creates a textarea for the user to enter their message with an id attribute that associates it with the corresponding label, a name attribute that specifies the name of the form field, and a required attribute that specifies that the field is required. -->
+          <input type="submit" value="Submit">
+          <!-- This creates a submit button for the user to submit the form with a type attribute that specifies the type of button (in this case, submit) and a value attribute that specifies the text to display on the button. -->
+        </form>
+      </div>
 </body>
 </html>
