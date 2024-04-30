@@ -1,104 +1,85 @@
-/* Your custom CSS styles here */
-        /* For demonstration purposes, let's add some basic styling */
-       
+ /* Add some modern styling */
+        /* Styling for the body */
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          color: #333;
+      }
+
+      /* Styling for the header */
       header {
-          background-color: #eff6f975;
-          color: #131212;
-          padding: 10px 0;
+          background-color: #f4f4f4;
+          padding: 2rem;
           text-align: center;
       }
+
+      /* Styling for the header's heading */
+      header h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+      }
+
+      /* Styling for the navigation bar */
       nav {
-          background-color: #1b9cc4;
-          overflow: hidden;
+          background-color: #333;
+          color: #fff;
+          display: flex;
+          justify-content: space-around;
+          padding: 1.5rem 0;
       }
+
+      /* Styling for navigation links */
       nav a {
-          float: left;
-          display: block;
-          color: #0f0e0e;
-          text-align: center;
-          padding: 14px 20px;
+          color: #fff;
           text-decoration: none;
+          padding: 0.5rem 1rem;
       }
+
+      /* Hover effect for navigation links */
       nav a:hover {
-          background-color: #666;
-      }
-      .content {
-          padding: 20px;
-          text-align: center;
+          background-color: #555;
       }
 
+      /* Styling for the hero image */
       .hero-image {
-        background-image: url('assets/images/chakra.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 450px; /* Adjust height as needed */
-    }
+          height: 400px;
+          background-position: center;
+          background-size: cover;
+      }
 
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      h1 {
-        text-align: center;
-      }
-      
-      h2 {
-        margin-top: 30px;
-      }
-      
-      p {
-        line-height: 1.6;
-      }
-      
+      /* Styling for sections */
       .section {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      
-      .section:last-child {
-        border-bottom: none;
+          background-color: #f4f4f4;
+          padding: 2rem;
+          margin-bottom: 2rem;
       }
 
-      .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; /* Optional: align content vertically */
-        min-height: 100vh; /* Optional: ensure the wrapper fills the viewport height */
-    }
+      /* Styling for section headings */
+      .section h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+      }
 
+      /* Styling for content */
+      .content {
+          max-width: 800px;
+          margin: auto;
+      }
 
+      /* Add image placeholders */
+      /* Styling for image placeholders */
+      .image-placeholder {
+          width: 100%;
+          height: 300px;
+          background-color: #ddd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
 
-    .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+      /* Text inside image placeholders */
+      .image-placeholder::before {
+          content: "Image";
+          font-size: 2rem;
+          font-weight: bold;
+      }
