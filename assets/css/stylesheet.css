@@ -12,17 +12,20 @@ body {
   color: #333;
 }
 
+/* Styling for the header */
 header {
   background-color: #f4f4f4;
   padding: 2rem;
   text-align: center;
 }
 
+/* Styling for the main heading */
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
+/* Styling for the navigation bar */
 nav {
   background-color: #333;
   color: #fff;
@@ -31,50 +34,59 @@ nav {
   padding: 1.5rem 0;
 }
 
+/* Styling for navigation links */
 nav a {
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
+/* Styling for navigation links on hover */
 nav a:hover {
   background-color: #555;
 }
 
+/* Styling for the hero image */
 .hero-image {
   height: 400px;
   background-position: center;
   background-size: cover;
 }
 
+/* Styling for the main container */
 .container {
   padding: 0 20px;
   max-width: 1200px;
   margin: auto;
 }
 
+/* Styling for sections */
 .section {
   background-color: #f4f4f4;
   padding: 2rem;
   margin-bottom: 2rem;
 }
 
+/* Styling for section headings */
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
+/* Styling for content within sections */
 .content {
   max-width: 800px;
   margin: auto;
 }
 
+/* Styling for responsive video container */
 .video-container {
   position: relative;
   padding-top: 56.25%; /* 16:9 aspect ratio */
   margin-bottom: 2rem;
 }
 
+/* Styling for embedded video */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -83,6 +95,7 @@ nav a:hover {
   height: 100%;
 }
 
+/* Styling for images */
 img {
   max-width: 100%;
   height: auto;
@@ -90,25 +103,30 @@ img {
   margin: 0 auto;
 }
 
+/* Styling for the footer */
 footer {
   background-color: #f4f4f4;
   padding: 20px 0;
   text-align: center;
 }
 
+/* Styling for footer paragraphs */
 .footer p {
   margin-bottom: 10px;
 }
 
+/* Styling for footer unordered lists */
 .footer ul {
   list-style-type: none;
 }
 
+/* Styling for footer list items */
 .footer ul li {
   display: inline;
   margin: 0 10px;
 }
 
+/* Styling for footer links */
 .footer ul li a {
   text-decoration: none;
   color: #333;
@@ -116,110 +134,108 @@ footer {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
   header h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   nav {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav a {
-      padding: 1rem 0;
+    padding: 1rem 0;
   }
 
   .hero-image {
-      height: 300px;
+    height: 300px;
   }
 
   .container {
-      padding: 0 10px;
+    padding: 0 10px;
   }
 
   .section {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .section h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .content {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .video-container {
-      padding-top: 75%; /* 4:3 aspect ratio for smaller screens */
+    padding-top: 75%; /* 4:3 aspect ratio for smaller screens */
   }
 }
 
 @media screen and (max-width: 576px) {
+  /* Adjustments for even smaller screens */
   header h1 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   nav a {
-      padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
 
   .hero-image {
-      height: 200px;
+    height: 200px;
   }
 
   .section {
-      padding: 1rem;
+    padding: 1rem;
   }
 
   .section h2 {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   .footer ul li {
-      margin: 0 5px;
+    margin: 0 5px;
   }
 }
 
- /* Style for the contact form container */
- .contact-form {
+/* Styling for the contact form container */
+.contact-form {
   background-color: #f2f2f2; /* Set background color */
   padding: 20px; /* Add padding */
   border-radius: 5px; /* Add rounded corners */
   margin-top: 50px; /* Add margin from the top */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
- }
- 
- 
- /* Style for the heading inside the contact form */
- .contact-form h2 {
+}
+
+/* Styling for the heading inside the contact form */
+.contact-form h2 {
   text-align: center; /* Center align the text */
   margin-bottom: 30px; /* Add margin below the heading */
- }
- 
- 
- /* Style for labels in the contact form */
- .contact-form label {
+}
+
+/* Styling for labels in the contact form */
+.contact-form label {
   display: block; /* Display labels as block elements */
   margin-bottom: 5px; /* Add margin below each label */
   font-weight: bold; /* Make labels bold */
- }
- 
- 
- /* Style for text inputs, email inputs, and textareas in the contact form */
- .contact-form input[type="text"],
- .contact-form input[type="email"],
- .contact-form textarea {
+}
+
+/* Styling for text inputs, email inputs, and textareas in the contact form */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
   width: 100%; /* Set width to 100% */
   padding: 10px; /* Add padding */
   border: 1px solid #ccc; /* Add border */
   border-radius: 5px; /* Add rounded corners */
   margin-bottom: 20px; /* Add margin below each input */
   box-sizing: border-box; /* Include padding and border in the width */
- }
- 
- 
- /* Style for the submit button in the contact form */
- .contact-form input[type="submit"] {
+}
+
+/* Styling for the submit button in the contact form */
+.contact-form input[type="submit"] {
   background-color: #4CAF50; /* Set background color */
   color: white; /* Set text color */
   padding: 10px 20px; /* Add padding */
@@ -227,11 +243,9 @@ footer {
   border-radius: 5px; /* Add rounded corners */
   cursor: pointer; /* Change cursor to pointer */
   transition: background-color 0.3s; /* Add smooth transition */
- }
- 
- 
- /* Style for the submit button on hover */
- .contact-form input[type="submit"]:hover {
+}
+
+/* Styling for the submit button on hover */
+.contact-form input[type="submit"]:hover {
   background-color: #3e8e41; /* Change background color on hover */
- }
- 
+}
