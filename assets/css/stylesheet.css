@@ -94,8 +94,8 @@ nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 /* Styling for images */
@@ -108,19 +108,22 @@ img {
 
 /* Styling for the footer */
 footer {
-  background-color: #f4f4f4;
+  background-color: #333;
   padding: 20px 0;
   text-align: center;
+  
 }
 
 /* Styling for footer paragraphs */
 .footer p {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 /* Styling for footer unordered lists */
 .footer ul {
   list-style-type: none;
+  text-decoration: #ffffff;
 }
 
 /* Styling for footer list items */
@@ -132,7 +135,7 @@ footer {
 /* Styling for footer links */
 .footer ul li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
 }
 
 /* Responsive design */
