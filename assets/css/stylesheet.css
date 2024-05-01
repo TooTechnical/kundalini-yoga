@@ -227,7 +227,7 @@ footer {
   padding: 20px; /* Add padding */
   border-radius: 5px; /* Add rounded corners */
   margin: 50px auto; /* Center the form horizontally and add margin from the top */
-  max-width: 600px; /* Limit the width of the form */
+  max-width: 500px; /* Limit the width of the form */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
