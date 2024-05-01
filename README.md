@@ -14,7 +14,7 @@ Embark on this sacred journey with us and explore the transformative power of Ku
 
 ## Responsivity Example Image
 
-![Responsivity Example](assets/images/om.jpg) <!-- Add an example image showcasing responsivity -->
+![Responsivity Example](assets/images/hpshot.png) <!-- Add an example image showcasing responsivity -->
 
 ## Contents
 
