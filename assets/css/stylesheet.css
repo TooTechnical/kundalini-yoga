@@ -200,6 +200,27 @@ footer {
   }
 }
 
+.pranayama-list {
+  margin-top: 20px;
+}
+
+.pranayama-list ul {
+  list-style-type: none;
+}
+
+.pranayama-list li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.pranayama-list li:before {
+  content: "•";
+  color: #000000; /* Adjust color as needed */
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+
 /* Styling for the contact form container */
 .contact-form {
   background-color: #f2f2f2; /* Set background color */
