@@ -270,7 +270,16 @@ footer {
   background-color: #333;
 }
 
+
+
 .footer ul li {
   margin: 0 5px;
   background-color: #333;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 20px;
 }
