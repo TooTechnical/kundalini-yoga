@@ -106,21 +106,6 @@ img {
   margin: 0 auto;
 }
 
-#social-networks {
-  text-align: center;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  
-}
-
-#social-networks i {
-  font-size: 160%;
-  padding: 5%;
-  color: #fff;
-}
-
 /* Responsive design */
 @media screen and (max-width: 768px) {
   /* Adjustments for smaller screens */
@@ -184,13 +169,7 @@ img {
     font-size: 1.25rem;
   }
 
-  footer {
-    background-color: #333;
-  }
 
-  .footer ul li {
-    margin: 0 5px;
-  }
 }
 
 .pranayama-list {
@@ -266,3 +245,26 @@ img {
   background-color: #3e8e41; /* Change background color on hover */
 }
 
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #fff;
+}
+
+footer {
+  background-color: #333;
+}
+
+.footer ul li {
+  margin: 0 5px;
+  background-color: #333;
+}
