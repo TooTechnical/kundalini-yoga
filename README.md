@@ -184,7 +184,6 @@ As part of our ongoing effort to enhance the user experience and expand the offe
 
 These potential features are designed to enhance the functionality of the Kundalini Yoga website, making it a more comprehensive and user-friendly resource. By integrating these technologies and services, we aim to support our users' yoga journeys more effectively and foster a deeper connection with the Kundalini Yoga community.
 
-## Technologies Used
 
 ## Technologies Used
 
@@ -230,6 +229,8 @@ By following these steps, I successfully deployed the Kundalini Yoga website on 
 
 ## Testing
 
+
+
 **Index HTML Page for desktop view
 
 ![Lighthouse test](assets/images/sch1.png)
@@ -271,4 +272,7 @@ By following these steps, I successfully deployed the Kundalini Yoga website on 
 
 ## Credits
 
-Content references, media references, acknowledgements, and any other credits.
+https://www.blackbox.ai/
+
+https://chat.openai.com/g/g-k3IqoCe1l-code-guru/c/67fc7512-2c9c-4750-a790-9b6f5db02a08
+https://colab.research.google.com/github/lllyasviel/Fooocus/blob/main/fooocus_colab.ipynb
