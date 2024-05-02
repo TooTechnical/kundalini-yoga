@@ -249,6 +249,18 @@ By following these steps, I successfully deployed the Kundalini Yoga website on 
 **Contact HTML for desktop
 ![lighthouse test](assets/images/sch7.png)
 
+##Validation Testing:
+
+## Index Web Page Validation Check:
+- ![validation test](assets/images/indexhtmlvalidation.png)
+
+- ## Yoga Web Page Validation Check:
+- - ![validation test](assets/images/yogavalidation.png)
+ 
+  - ## Contact Form Validation Check:
+  - - ![validation test](assets/images/contactformvaledation.png)
+
+
 
 
 
