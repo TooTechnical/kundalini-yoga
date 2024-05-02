@@ -63,6 +63,9 @@ The website is structured as follows:
 - Main: Contains the hero image and content sections
 - Footer: Contains the social media icons and copyright information
 
+- ![lighthouse test](assets/images/sch2.png)
+
+
 ## Surface
 
 The surface of the website includes:
@@ -213,7 +216,32 @@ By following these steps, I successfully deployed the Kundalini Yoga website on 
 
 ## Testing
 
-Details about the testing process, including validation of HTML/CSS, Lighthouse Audits, and bugs encountered.
+**Index HTML Page for desktop view
+
+![Lighthouse test](assets/images/sch1.png)
+
+**Index HTML Page for Mobile view
+![lighthouse test](assets/images/sch2.png)
+
+**Yoga HTML for Mobile view
+![lighthouse test](assets/images/sch3.png)
+
+**Yoga HTML for Desktop view
+![lighthouse test](assets/images/sch4.png)
+
+**Contact HTML for mobile
+![lighthouse test](assets/images/sch6.png)
+
+**Contact HTML for desktop
+![lighthouse test](assets/images/sch7.png)
+
+
+
+
+
+
+
+
 
 ## Credits
 
