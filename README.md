@@ -169,11 +169,47 @@ These potential features are designed to enhance the functionality of the Kundal
 
 ## Technologies Used
 
-List of languages, frameworks, libraries, and programs used in your project.
+## Technologies Used
+
+In this project, I've utilized a range of languages, frameworks, libraries, and tools. Here's a breakdown of each:
+
+- **HTML**: The Kundalini Yoga website is built using HTML5, which is a markup language used for creating web pages.
+- **CSS**: Cascading Style Sheets (CSS) is used for styling the web pages, including layout, colors, and fonts.
+- **Font Awesome**: Font Awesome is a library of icons used in the website, such as the social media icons in the footer.
+- **GitHub**: GitHub is used for version control and collaboration, allowing multiple developers to work on the project simultaneously.
+- **Google Fonts**: Google Fonts is used for importing custom fonts into the website, such as the Arial, sans-serif font used for the body text.
+- **Chrome DevTools**: Chrome DevTools is a set of web developer tools built into the Google Chrome browser, used for debugging and testing the website.
 
 ## Deployment
 
-Step-by-step process for deploying your project to GitHub Pages.
+## Deployment Guide for Kundalini Yoga Website on GitHub Pages
+
+In this section, I'll share how I deployed my Kundalini Yoga website project using GitHub Pages. Follow these steps if you'd like to replicate the process for your own project:
+
+1. **Creating a GitHub Repository**
+   - Initially, I needed a place to host my project files. I created a repository on GitHub by clicking the "New repository" button on my dashboard, ensuring the repository name reflected my project.
+
+2. **Preparing the Project**
+   - My project's main entry point is the `index.html` file, which is located at the root of the project structure. I organized all related files (like CSS, and images) within the repository to keep things tidy.
+
+3. **Pushing the Project to GitHub**
+   - To get my project onto GitHub, I started by initializing a Git repository in my project directory with `git init`.
+   - I added all my files to the staging area with `git add .` and committed them with `git commit -m "Initial commit"`.
+   - I then linked my local repository to the remote GitHub repository using `git remote add origin [URL of your GitHub repository]` and pushed my changes with `git push -u origin master`.
+
+4. **Enabling GitHub Pages**
+   - On the GitHub site, in my repository's "Settings" tab, I scrolled down to the "GitHub Pages" section.
+   - I selected the `master` branch as the source and saved my settings, which immediately made GitHub Pages active for my repository.
+
+5. **Custom Domain Configuration (Optional)**
+   - I wanted my project to have a professional look with a custom domain, so under the same "GitHub Pages" settings, I added my custom domain in the "Custom domain" section.
+
+6. **Accessing the Website**
+   - After setting everything up, my site was available at `(https://tootechnical.github.io/kundalini-yoga/index.html)<repository>`. 
+7. **Updating the Site**
+   - To keep my site up-to-date, I regularly push new changes to the `master` branch. Each push automatically updates the live website, ensuring visitors always see the latest content.
+
+By following these steps, I successfully deployed the Kundalini Yoga website on GitHub Pages, making it accessible to users worldwide. GitHub Pages is an excellent tool for hosting static websites like mine.
 
 ## Testing
 
