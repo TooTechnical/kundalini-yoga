@@ -63,7 +63,21 @@ The website is structured as follows:
 - Main: Contains the hero image and content sections
 - Footer: Contains the social media icons and copyright information
 
-- ![lighthouse test](assets/images/sch2.png)
+## Wireframe for the Home Page
+
+- ![lighthouse test](assets/images/indexwf.jpeg)
+
+  ## Wireframe for the Yoga page
+  
+- ![lighthouse test](assets/images/yogawf.jpeg)
+
+  ## Wireframe for the Contact Page
+
+- ![lighthouse test](assets/images/contactwf.jpeg)
+
+  
+  
+
 
 
 ## Surface
