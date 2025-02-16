@@ -1,90 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the transformative practice of Kundalini Yoga at our website. Explore beginner-friendly techniques, dive into advanced practices, and find balance through breathwork, movement, and meditation. Connect with our vibrant community and embark on a journey of self-discovery and holistic well-being." />
+{% block title %}
+Contact - Kundalini Yoga
+{% endblock %}
 
-    <!-- Linking external stylesheet -->
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
-    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+{% block content %}
+<h2>Contact Us</h2>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <title>Document</title>
-</head>
-
-
-<body>
-    <!-- Header section -->
-    <header>
-        <!-- Main heading -->
-        <h1>Kundalini Yoga</h1>
-    </header>
-    <!-- Navigation bar -->
-    <nav>
-        <!-- Navigation links -->
-        <a href="index.html">Home</a>
-        <a href="yoga.html">Yoga</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <!-- Hero image -->
-    <div class="hero-image" style="background-image: url('assets/images/om.webp');"></div>
-
-
-    <div class="contact-form">
-        <!-- This creates a container for the contact form with a class of "contact-form" for styling purposes. -->
-        <h2>Contact Us</h2>
-        <!-- This creates a heading for the contact form with a level of 2. -->
-        <form action="https://formdump.codeinstitute.net/" method="post">
-            <!-- This creates a form with an action attribute that specifies the URL to send the form data to and a method attribute that specifies the HTTP method to use (in this case, POST). -->
-            <label for="name">Name:</label><br>
-            <!-- This creates a label for the name input field with a for attribute that associates it with the corresponding input field. -->
-            <input type="text" id="name" name="name" required><br>
-            <!-- This creates a text input field for the user to enter their name with an id attribute that associates it with the corresponding label, a name attribute that specifies the name of the form field, and a required attribute that specifies that the field is required. -->
-            <label for="email">Email:</label><br>
-            <!-- This creates a label for the email input field with a for attribute that associates it with the corresponding input field. -->
-            <input type="email" id="email" name="email" required><br>
-            <!-- This creates an email input field for the user to enter their email address with an id attribute that associates it with the corresponding label, a name attribute that specifies the name of the form field, and a required attribute that specifies that the field is required. -->
-            <label for="message">Message:</label><br>
-            <!-- This creates a label for the message textarea with a for attribute that associates it with the corresponding textarea. -->
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-            <!-- This creates a textarea for the user to enter their message with an id attribute that associates it with the corresponding label, a name attribute that specifies the name of the form field, and a required attribute that specifies that the field is required. -->
-            <input type="submit" value="Submit">
-            <!-- This creates a submit button for the user to submit the form with a type attribute that specifies the type of button (in this case, submit) and a value attribute that specifies the text to display on the button. -->
-        </form>
-    </div>
-
-    <footer>
-        <ul id="social-networks">
-            <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)">
-                    <i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)">
-                    <i class="fa-brands fa-twitter-square"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our YouTube page (opens in a new tab)">
-                    <i class="fa-brands fa-youtube-square"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)">
-                    <i class="fa-brands fa-instagram"></i></a>
-            </li>
-        </ul>
-        <p class="copyright">&copy; 2023 Kundalini Yoga. All rights reserved.</p>
-
-    </footer>
-    
-</body>
-
-</html>
+<form method="post" action="">  <!-- Use an empty action -->
+    {% csrf_token %}  <!-- Protect against CSRF attacks -->
+    {{ form.as_p }}  <!-- Render the form fields -->
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+{% endblock %}
