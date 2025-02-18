@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ yoga_class.title }} - Kundalini Yoga
+{% endblock %}
+
+{% block content %}
+<h2>{{ yoga_class.title }}</h2>
+
+<p><strong>Instructor:</strong> {{ yoga_class.instructor.name }}</p>
+<p><strong>Date:</strong> {{ yoga_class.date|date:"D, M d, Y H:i" }}</p>
+<p><strong>Capacity:</strong> {{ yoga_class.capacity }}</p>
+<p>{{ yoga_class.description }}</p>
+
+<a href="{% url 'yoga' %}" class="btn btn-primary">Back to Classes</a>
+{% endblock %}
