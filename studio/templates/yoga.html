@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 Yoga Classes - Kundalini Yoga
@@ -33,4 +34,14 @@ Yoga Classes - Kundalini Yoga
         <a href="?page={{ page_obj.next_page_number }}">Next</a>
     {% endif %}
 </div>
+
+<!-- Parallax Section -->
+<div class="parallax" style="background-image: url('{% static "images/ygabg.webp" %}');">
+    <h2>Join Our Yoga Classes</h2>
+</div>
+
+<section>
+    <h3>Explore More Classes</h3>
+    <!-- Additional content can go here -->
+</section>
 {% endblock %}

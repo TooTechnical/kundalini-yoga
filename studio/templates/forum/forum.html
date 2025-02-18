@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Community Forum - Kundalini Yoga
+{% endblock %}
+
+{% block content %}
+<h2>Community Forum</h2>
+<a href="{% url 'create_post' %}" class="btn btn-primary">Create New Post</a>
+<ul>
+    {% for post in posts %}
+        <li>
+            <h3>{{ post.title }}</h3>
+            <p>By {{ post.author.username }} on {{ post.created_at|date:"D M d Y" }}</p>
+            <p>{{ post.content }}</p>
+        </li>
+    {% empty %}
+        <p>No posts yet.</p>
+    {% endfor %}
+</ul>
+{% endblock %}

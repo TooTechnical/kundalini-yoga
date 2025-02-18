@@ -21,7 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-vy)ne(*$1#*m@@0(n1ex!ebvuz(-00k)@^_t04f7=sob*y-zy0'
+SECRET_KEY = (
+    'django-insecure-vy)ne(*$1#*m@@0(n1ex!ebvuz(-00k)@^_t04f7=sob*y-zy0'
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,12 +79,12 @@ WSGI_APPLICATION = 'kundalini_yoga.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL as the database engine
-        'NAME': 'kundalini_pp4',                   # Database name
-        'USER': 'dillonmalone',                    # PostgreSQL role (your macOS username)
-        'PASSWORD': 'masseffect',                  # Password for the role
-        'HOST': 'localhost',                       # Hostname for local PostgreSQL server
-        'PORT': '5432',                            # Default PostgreSQL port
+        'ENGINE': 'django.db.backends.postgresql',  
+        'NAME': 'kundalini_pp4',
+        'USER': 'dillonmalone',                    
+        'PASSWORD': 'masseffect',                  
+        'HOST': 'localhost',                  
+        'PORT': '5432',                   
     }
 }
 
@@ -122,9 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'studio/static')]  # Points to your static folder
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'studio/static')] 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/'  # Redirect to homepage after login
+LOGOUT_REDIRECT_URL = '/'  # Redirect to homepage after logout

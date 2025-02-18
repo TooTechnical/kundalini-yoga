@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+Profile - Kundalini Yoga
+{% endblock %}
+
+{% block content %}
+<h2>Your Profile</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}

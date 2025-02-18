@@ -8,4 +8,15 @@ Home - Kundalini Yoga
 {% block content %}
 <h2>Welcome to Kundalini Yoga Home Page!</h2>
 <p>Explore the ancient origins and transformative practices of Kundalini Yoga.</p>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Find Your Inner Peace</h1>
+        <p>Join our yoga classes and embark on a journey of self-discovery.</p>
+        <a href="{% url 'yoga' %}" class="btn btn-primary">Explore Classes</a>
+    </div>
+    <video autoplay muted loop class="hero-video">
+        <source src="{% static 'videos/yoga-background.mp4' %}" type="video/mp4">
+    </video>
+</div>
 {% endblock %}

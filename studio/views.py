@@ -3,9 +3,19 @@ from django.http import HttpResponse
 from django.core.paginator import Paginator
 from .forms import ContactForm
 from .models import YogaClass
+from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
+from .forms import RegistrationForm
+from .forms import ProfileUpdateForm
+from .models import Profile
+from .models import ForumPost
+
+
+
 
 # Yoga Detail View
-def yoga_detail(request, pk):
+def yoga_detail(request, pk):  
+
     yoga_class = get_object_or_404(YogaClass, pk=pk)  # Fetch the yoga class by primary key or return 404
     return render(request, 'yoga_detail.html', {'yoga_class': yoga_class})
 
@@ -44,3 +54,51 @@ def contact(request):
 # Success Page View
 def success(request):
     return HttpResponse('Thank you for your message!')
+
+def register(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            user = form.save()  # Save the user to the database
+            login(request, user)  # Log in the user after registration
+            return redirect('index') 
+    else:
+        form = RegistrationForm()
+    return render(request, 'register.html', {'form': form})
+
+
+@login_required
+def profile(request):
+    # Ensure the user has a profile (fallback for missing profiles)
+    if not hasattr(request.user, 'profile'):
+        Profile.objects.create(user=request.user)
+
+    if request.method == 'POST':
+        form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
+    else:
+        form = ProfileUpdateForm(instance=request.user.profile)
+    return render(request, 'profile.html', {'form': form})
+
+
+@login_required
+def yoga(request):
+    yoga_classes = YogaClass.objects.all()
+    return render(request, 'yoga.html', {'yoga_classes': yoga_classes})
+
+
+def forum(request):
+    posts = ForumPost.objects.all()
+    return render(request, 'forum/forum.html', {'posts': posts})
+
+@login_required
+def create_post(request):
+    if request.method == 'POST':
+        title = request.POST['title']
+        content = request.POST['content']
+        ForumPost.objects.create(author=request.user, title=title, content=content)
+        return redirect('forum')
+    return render(request, 'forum/create_post.html')
+
