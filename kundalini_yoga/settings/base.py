@@ -62,10 +62,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'studio/static')  # Path to your app's static folder
-    
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'studio/static'),  # Path to your app's static folder
+    os.path.join(BASE_DIR, 'static')          # Global static folder if exists
 ]
+
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
