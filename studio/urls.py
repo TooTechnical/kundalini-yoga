@@ -1,4 +1,5 @@
 from django.urls import path
+from django.contrib.auth.views import LogoutView
 from . import views
 
 urlpatterns = [
@@ -11,5 +12,7 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),  # User profile page
     path('forum/', views.forum, name='forum'),  # Forum page
     path('forum/new/', views.create_post, name='create_post'),
+    path('logout/', LogoutView.as_view(next_page='home'), name='logout'),
+
 
 ]

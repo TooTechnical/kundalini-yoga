@@ -5,6 +5,8 @@ from .forms import ContactForm
 from .models import YogaClass
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.http import require_POST
+
 from .forms import RegistrationForm
 from .forms import ProfileUpdateForm
 from .models import Profile
@@ -102,3 +104,7 @@ def create_post(request):
         return redirect('forum')
     return render(request, 'forum/create_post.html')
 
+@require_POST
+def logout_view(request):
+    logout(request)
+    return redirect('home')  # or wherever you want to redirect after logout
