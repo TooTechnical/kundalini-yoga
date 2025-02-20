@@ -1,1 +1,1 @@
-web: gunicorn kundalini_yoga.wsgi
+web: gunicorn kundalini_yoga.wsgi --log-file -
