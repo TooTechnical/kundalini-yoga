@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = 'b$6=u8e_0fk861pc^vlmck%(22x=@s_8(2j^2gx%$s_!enf@3h'
 
-ALLOWED_HOSTS = ['https://kundalini-yoga-app-29d88017307f.herokuapp.com']
+ALLOWED_HOSTS = ['kundalini-yoga-app-29d88017307f.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
