@@ -3,7 +3,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = 'your-secret-key-here'  # Replace with a secure secret key
+SECRET_KEY = 'b$6=u8e_0fk861pc^vlmck%(22x=@s_8(2j^2gx%$s_!enf@3h'
+
+ALLOWED_HOSTS = ['https://kundalini-yoga-app-29d88017307f.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -23,6 +25,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'kundalini_yoga.urls'
@@ -60,6 +63,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
