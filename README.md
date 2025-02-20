@@ -1,6 +1,6 @@
  # Kundalini Yoga
 
-[LiveSite](https://tootechnical.github.io/kundalini-yoga/index.html) <!-- Replace # with your live site link -->
+[LiveSite](https://kundalini-yoga-app-29d88017307f.herokuapp.com/register/) <!-- Replace # with your live site link -->
 
 ## Brief Introduction
 
