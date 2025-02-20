@@ -3,12 +3,10 @@
 import os
 import sys
 
-sys.path.append('/path/to/kundalini-yoga')  # Add this line to your manage.py file
-
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kundalini_yoga.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kundalini_yoga.settings.development')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
