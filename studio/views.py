@@ -11,7 +11,8 @@ from .forms import RegistrationForm
 from .forms import ProfileUpdateForm
 from .models import Profile
 from .models import ForumPost
-
+from .models import Post
+from studio.models import Post
 
 
 
@@ -108,3 +109,7 @@ def create_post(request):
 def logout_view(request):
     logout(request)
     return redirect('home')  # or wherever you want to redirect after logout
+
+def community_forum(request):
+    all_posts = Post.objects.all().order_by('-created_at')
+    return render(request, 'forum.html', {'posts': all_posts})

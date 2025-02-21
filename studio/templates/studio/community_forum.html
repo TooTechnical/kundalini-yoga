@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Community Forum</h1>
+
+<div id="forum-posts">
+    {% for post in all_posts %}
+    <div class="forum-post">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <small>Posted by {{ post.user.username }} on {{ post.created_at }}</small>
+    </div>
+    {% empty %}
+    <p>No posts yet. Be the first to start a discussion!</p>
+    {% endfor %}
+</div>
+
+<form id="post-form" method="POST" action="{% url 'create_post' %}">
+    {% csrf_token %}
+    <h2>Create a New Post</h2>
+    <input type="text" name="title" placeholder="Post Title" required>
+    <textarea name="description" placeholder="Post Content" required></textarea>
+    <button type="submit">Submit Post</button>
+</form>
+
+<script>
+    const socket = new WebSocket('ws://' + window.location.host + '/ws/forum/');
+
+    socket.onmessage = function(e) {
+        const data = JSON.parse(e.data);
+        const forumPosts = document.getElementById('forum-posts');
+        forumPosts.innerHTML += `
+            <div class="forum-post">
+                <h3>${data.title}</h3>
+                <p>${data.description}</p>
+                <small>Posted by ${data.username} just now</small>
+            </div>
+        `;
+    };
+
+    document.querySelector('#post-form').onsubmit = function(e) {
+        e.preventDefault();
+        const title = this.title.value;
+        const description = this.description.value;
+        socket.send(JSON.stringify({
+            'title': title,
+            'description': description
+        }));
+        this.title.value = '';
+        this.description.value = '';
+    };
+</script>
+{% endblock %}

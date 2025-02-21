@@ -1,6 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+class Post(models.Model):
+    # Your fields here
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    # ... other fields
+
 
 class Instructor(models.Model):
     name = models.CharField(max_length=100)
