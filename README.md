@@ -6,8 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellowgreen)](https://opensource.org/licenses/MIT)
 [![Heroku Deployment](https://img.shields.io/badge/Heroku-Deployed-purple)](https://kundalini-yoga-app.herokuapp.com)
 
-![Platform Screenshot](static/images/screenshot.jpg) *Replace with actual screenshot*
-
+[Kundalini Yoga](https://kundalini-yoga-app-29d88017307f.herokuapp.com/)
 ## 🌟 Features
 ### Core Functionality
 ✅ **User Authentication System**  
